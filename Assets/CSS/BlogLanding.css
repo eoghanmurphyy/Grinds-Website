@@ -1,0 +1,242 @@
+.content{
+    padding: 100px 80px 0;
+}
+
+.content .courses a{
+    color: #000;
+}
+
+.content .courses a:hover{
+    color: var(--link-hover-color);
+}
+
+.content .separatorreview{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+    background:  #fff;
+    padding: 40px;
+    border-radius: 20px;
+}
+
+.content .separator{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    background:  #fff;
+    padding: 40px;
+    border-radius: 20px;
+}
+
+.content .separator2{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 2rem;
+    background:  #fff;
+    padding: 40px;
+    border-radius: 20px;
+}
+
+.content .separator:hover,
+.content .separatorreview:hover, 
+.content .separator2:hover{
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 3rem 3rem rgba(0, 0, 0, 0.5);
+}
+
+.content .separator a,
+.content .articles .item .bottom a{
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    color: #1b3b8d;
+    font-size: 14px;
+}
+
+.content .separator a i,
+.content .articles .item .bottom a i{
+    font-size: 18px;
+}
+
+.content .courses{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    row-gap: 20px;
+    margin-bottom: 100px;
+}
+
+.content .courses .item{
+    width: 30%;
+}
+
+.content .courses .item .top,
+.content .courses .item .bottom,
+.content .articles .item .top,
+.content .articles .item .bottom{
+    display: flex;
+    gap: 10px;
+    background-color: #fff;
+    padding: 14px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 18px;
+    border-bottom: 1px dashed #888;
+}
+
+.content .courses .item .top img{
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.content .courses .item .info a{
+    display: block;
+    font-size: 15px;
+    font-weight: 900;
+    margin-bottom: 8px;
+    line-height: 1.4rem;
+}
+
+.content .courses .item .top .info p{
+    color: #888;
+    font-size: 13px;
+    margin-bottom: 2px;
+}
+
+.content .courses .item .bottom,
+.content .articles .item .bottom{
+    border-bottom: none;
+    justify-content: space-between;
+    border-top: 1px dashed #888;
+}
+
+.content .courses .item .bottom .price p{
+    color: #888;
+    font-size: 13px;
+    text-decoration: line-through;
+}
+
+.content .courses .item .bottom h5.tag,
+.content .courses .item .bottom .discount > h5,
+.content .articles .item .bottom h5{
+    font-weight: 500;
+    background-color: #fff2b2;
+    color: #db7c26;
+    padding: 10px;
+    border-radius: 12px;
+    font-size: 13px;
+}
+
+.content .videos .item .bottom  h3,
+.content .hear > h5{
+    display: inline-block;
+    font-weight: 500;
+    background-color: #F2B84B;
+    padding: 10px;
+    border-radius: 12px;
+    font-size: 18px;
+}
+
+.content .videos .item .bottom h3:hover,
+.content .hear > h5:hover{
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 0.8rem 0.8rem rgba(0, 0, 0, 0.5);
+}
+
+.content .videos .item .bottom  h3 span{
+    font-weight: bolder;
+}
+
+.content .hear h5 span{
+    font-weight: bold;
+}
+
+.content .hear{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.content .hear a{
+    margin-left: auto;
+}
+
+.content .separator1 h2{
+    text-align: center;
+    padding: 10px;
+}
+
+.content .separator1 h2 span{
+    background-color: #F2B84B;
+    display: inline-block;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.content .courses .item .bottom h5.tag span,
+.content .courses .item .bottom .discount > h5 span,
+.content .articles .item .bottom h5 span{
+    font-weight: bolder;
+}
+
+.content .courses .item .bottom .discount{
+    display: flex;
+    gap: 10px;
+}
+
+.content .courses .item .bottom .discount > h5{
+    background-color: #b7e4c7;
+    color: #2d6a4f;
+}
+
+.content .courses .item .bottom .discount .time{
+    text-align: center;
+}
+
+.content .courses .item .bottom .discount .time p{
+    color: #888;
+    font-size: 12px;
+}
+
+.content .courses .item .bottom .discount .time h5{
+    font-size: 13px;
+}
+
+.content .hear{
+    text-align: center;
+    margin-bottom: 30px;
+    justify-content: center;
+}
+
+.content .articles{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 80px;
+    flex-wrap: wrap;
+    row-gap: 20px;
+}
+
+.content .articles .item{
+    width: 23%;
+} 
+
+.content .articles .item .top{
+    flex-direction: column;
+}
+
+.content .articles .item .top img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 8px;
+}
+
+.content .articles .item:hover{
+    transition: all 0.3s ease-in-out;
+    box-shadow: 1rem 1rem 0 0 rgba(0, 0, 0, 0.1);
+}

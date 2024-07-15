@@ -1,0 +1,336 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+}
+
+/* Define CSS variables */
+:root {
+    --primary-color: #4B53F2; /* Primary color */
+    --secondary-color: #140F8C; /* Secondary color */
+    --background-color: #F2F2F2; /* Background color */
+    --accent-color: #F26B6B; /* Accent color */
+    --light-accent-color: #BBCDF2; /* Light accent color */
+    --dark-accent-color: #0A0773; /* Dark accent color */
+    --white-color: #FFFFFF; /* White color */
+    --link-color: #FFFFFF; /* Link color */
+    --link-hover-color: #3f72af; /* Link hover color */
+    --black: #000
+}
+
+/* Background styling */
+body {
+    background: linear-gradient(var(--dark-accent-color) 5%, var(--primary-color), var(--secondary-color));
+}
+
+/* Navigation bar styling */
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 80px;
+    height: 80px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 20px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+    background-color: var(--secondary-color);
+}
+
+nav .left{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+nav .left .logo img{
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+}
+
+nav .left .links{
+    display: flex;
+    gap: 20px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+nav .buttons{
+    display: flex;
+    gap: 14px; 
+}
+
+nav .buttons a{
+    padding: 10px;
+    color: var(--link-color);
+    border-radius: 50%;
+    font-size: 18px;
+}
+
+nav .buttons a:hover{
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+}
+
+/* Primary button styling */
+.button-primary{
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.button-primary:hover {
+    background-color: var(--secondary-color);
+}
+
+/* Secondary button styling */
+.button-secondary {
+    background-color: var(--secondary-color);
+    color: var(--white-color);
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.button-secondary:hover {
+    background-color: var(--dark-accent-color);
+}
+
+/* Footer styling */
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 60px 100px 30px;
+    color: var(--white-color);
+    background: var(--black);
+    box-shadow: rgba(0, 0, 0, 1) 20px 0px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+}
+
+footer .columns {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 5rem;
+}
+
+footer .columns .col {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+footer .columns .col.last {
+    flex: 3;
+}
+
+footer .columns .col h5 {
+    margin-bottom: 14px;
+    font-size: 16px;
+}
+
+footer .columns .col a {
+    margin-bottom: 4px;
+    color: var(--link-color);
+    font-size: 14px;
+    text-decoration: none; /* Apply globally */
+    transition: all 0.3s ease; /* Apply globally */
+}
+
+footer .columns .col a:hover {
+    color: var(--link-hover-color); /* Change color on hover */
+}
+
+footer .columns .col.last p {
+    font-size: 14px;
+    margin-bottom: 14px;
+}
+
+.contact__form2{
+    display: flex;
+    flex-direction: row;
+    max-width: 100%;
+}
+  
+.contact__form2 input[type="email"]{
+    width: 60%;
+    font-size: 14px;
+    padding: .5rem;
+    border-radius: .5rem;
+    background: var(--white-color); /* Changed background color to a darker shade */
+    color: var(--black); /* Ensure the text color is white */
+}
+  
+.contact__form2 .btn{
+    color: var(--white-color);
+    background-color: var(--accent-color);
+    padding: .5rem;
+    border-radius: .5rem;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+footer .columns .col.last .social-links {
+    display: flex;
+    gap: 1rem;
+}
+
+footer .columns .col.last .social-links a{
+    position: relative;
+    top: -2%;
+    left: 3.5%;
+    padding: 1rem;
+    border: dashed;
+    border-radius: 1rem;
+    cursor: pointer;
+    text-align: center;
+}
+
+footer .columns .col.last .social-links i{
+    font-size: 1rem;
+}
+
+.Socialsfooter{
+    position: relative;
+    margin-top: 2rem;
+    left: 30%;
+}
+
+.contact_details li {
+    display: flex;
+    flex-direction: row;
+    gap: .5rem;
+    align-items:first baseline;
+    margin-bottom: 1rem;
+}
+
+.contact_details h5{
+    font-size: 14px;
+    font-weight: normal;
+}
+
+.contactusfooter{
+    text-align: center;
+    padding: 1rem;
+    background-color: var(--accent-color);
+    border-radius: 1rem;
+}
+footer .copyright {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 13px;
+}
+
+.copyright img{
+    width: 20%;
+}
+
+/* Apply link styles globally */
+a {
+    text-decoration: none;
+    color: var(--link-color);
+    transition: all 0.3s ease;
+}
+
+a:hover {
+    color: var(--link-hover-color);
+}
+
+/*-----------------------MEDIA------------------*/
+
+@media screen and (max-width:1200px){
+
+    nav{
+        padding: 0 60px;
+    }
+
+    /* Reset positioning for social links and email input */
+    .col.last .Socialsfooter,
+    .col.last .social-links,
+    .col.last .social-links a,
+    .contact__form2 {
+        position: initial;
+        top: auto;
+        left: auto;
+        text-align: center; /* Center text and inline elements horizontally */
+    }
+
+    .col.last{
+        text-align: center;
+        align-items: center;
+    }
+
+    .col.last .social-links{
+        margin-right: 1.35rem;
+    }
+
+    .col.last .form2{
+        margin-left: 2rem;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 940px) {
+
+    nav .left .logo{
+        display: none;
+    }
+
+    footer{
+        padding: 60px 70px 30px;
+    }
+
+    footer .columns{
+        flex-wrap: wrap;
+        row-gap: 20px;
+    }
+
+    footer .columns .col,
+    footer .columns .col.last{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        width: 45%;
+        flex: none;
+    }
+}
+
+@media screen and (max-width: 768px){
+    nav{
+        padding: 0 30px;
+    }
+
+    nav .left .links{
+        font-size: 13px;
+        gap: 14px;
+    }
+
+    nav .buttons a:first-child{
+        display: none;
+    }
+
+    footer{
+        padding: 60px 50px 30px;
+    }
+
+    .col.last .form2{
+        margin-left: .5rem;
+    }
+}
+
+@media screen and (max-width:576px) {
+    nav .left .links a:nth-child(5),
+    nav .left .links a:nth-child(6){
+        display: none;
+    }
+
+    footer{
+        padding: 60px 30px 30px;
+    }
+}

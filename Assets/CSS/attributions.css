@@ -1,0 +1,112 @@
+:root {
+    --primary-color: #4B53F2; /* Primary color */
+    --secondary-color: #140F8C; /* Secondary color */
+    --background-color: #F2F2F2; /* Background color */
+    --accent-color: #F26B6B; /* Accent color */
+    --light-accent-color: #BBCDF2; /* Light accent color */
+    --dark-accent-color: #0A0773; /* Dark accent color */
+    --white-color: #FFFFFF; /* White color */
+    --link-color: #FFFFFF; /* Link color */
+    --link-hover-color: #3f72af; /* Link hover color */
+    --black: #000
+}
+
+/* General styling for header */
+.header2 {
+    margin: 1rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center; /* Centers items horizontally */
+}
+
+body .container {
+    max-width: 1000px;
+    margin: 0 auto; /* Centers the container itself horizontally */
+}
+
+body .container .header2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around; /* Centers items within the header horizontally */
+    margin: 4rem auto; /* Centers the header itself horizontally */
+}
+
+body .container .header2 .info {
+    text-align: center;
+    color: var(--white-color);
+}
+
+body .container .header2 .info .title {
+    margin: 20px 0;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+/* Article styling */
+body article {
+    padding-bottom: 20px;
+    line-height: 1.70;
+    background: rgb(255, 255, 255);
+    margin: 3rem 0;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(0, 0, 0, 0.68);
+}
+
+body article h4 {
+    margin-top: 20px;
+    margin-bottom: 30px;
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+body article p {
+    margin-bottom: 20px;
+    font-size: 1rem;
+}
+
+body article a{
+    color: var(--black);
+
+}
+
+
+body article blockquote {
+    margin: 2rem 5rem;
+    padding: 30px;
+    border: dashed rgba(0, 0, 0, 0.8);
+    border-radius: 1rem;
+    box-shadow: inset 0 0 80px rgba(0, 0, 0, 0.1);
+}
+
+@media screen and (max-width: 768px) {
+
+    body .container header{
+        padding: 10px 20px 30px;
+        min-height: 300px;
+    }
+
+    body .container header .category{
+        font-size: 0.9rem;
+    }
+
+    body .container header .info .title{
+        font-size: 2.2rem;
+    }
+
+    body .container header .info .subtitle{
+        font-size: 0.8rem;
+    }
+
+    body .container .details .item{
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    body .container .details .item:not(:last-child){
+        margin-bottom: 30px;
+    }    
+}
