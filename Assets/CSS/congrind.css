@@ -1,0 +1,283 @@
+/* Define CSS variables */
+:root {
+  --primary-color: #4B53F2; /* Primary color */
+  --secondary-color: #140F8C; /* Secondary color */
+  --background-color: #F2F2F2; /* Background color */
+  --accent-color: #F26B6B; /* Accent color */
+  --light-accent-color: #BBCDF2; /* Light accent color */
+  --dark-accent-color: #0A0773; /* Dark accent color */
+  --white-color: #FFFFFF; /* White color */
+  --link-color: #FFFFFF; /* Link color */
+  --link-hover-color: #3f72af; /* Link hover color */
+  --black: #000
+}
+
+.contact .contact__container .contact__aside .aside__image img {
+  max-width: 100%;
+  width: 80%;
+  border-radius: 2rem;
+}
+
+.buttons{
+  display: flex;
+  flex-direction: column;
+}
+
+.contact__aside .buttons button {
+  border: none;
+  font-size: 15.84px;
+  padding: 15px;
+  max-width: 100%;
+  border-radius: 1rem;
+  margin: 0.5rem;
+  padding: 1rem;
+  background-color: var(--accent-color);
+  color: #Fff;
+  cursor: pointer;
+}
+
+button:hover{
+  background-color: var(--link-hover-color);
+}
+
+.contact__container {
+  background: var(--dark-accent-color);
+  padding: 4rem;
+  display: grid;
+  grid-template-columns: 40% 60%;
+  gap: 4rem;
+  height: 37.5rem;
+  border-radius: 1rem;
+}
+
+/* ASIDE */
+
+.contact__aside {
+  background: #85AEE1;
+  padding: 1rem;
+  border-radius: 1rem;
+  position: relative;
+  bottom: 5.5rem;
+  height: 40rem;
+}
+
+.aside__image .bagimage{
+  margin: 0 auto 2rem auto; /* Center the image horizontally and add bottom margin */
+  width: 100rem;
+}
+
+.aside__image {
+  margin: 0 auto 2rem auto; /* Center the image horizontally and add bottom margin */
+  max-width: 50rem; /* Set maximum width for the image */
+  display: block;
+}
+
+.aside__image img {
+  display: block;
+  margin: 0 auto 2rem auto; /* Center the image horizontally and add bottom margin */
+  max-width: 100%; /* Ensure the image fills its container */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.contact__aside h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.contact__aside p {
+  font-size: large;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.contact__aside .top{
+  margin-top: 1rem;
+}
+
+.contact__aside .bottom{
+  margin-bottom: 2rem;
+}
+
+.contact__details li {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.contact__socials {
+  display: flex;
+  justify-content: center;
+  gap: 0.8rem;
+  margin-top: 3rem;
+}
+
+.contact__socials a {
+  background: var(--primary-color);
+  padding: 1rem;
+  border-radius: 1rem;
+  font-size: 0.9rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.contact__socials a:hover {
+  background: transparent;
+}
+
+/* FORM */
+
+.contact__form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  margin-right: 4rem;
+}
+
+.form__name {
+  display: flex;
+  gap: 1.2rem;
+  color: #000; /* Change the color to black */
+}
+
+.contact__form input[type="text"],
+.contact__form input[type="email"],
+.contact__form select[id="subject"],
+.contact__form select[id="Tutor"],
+.contact__form textarea {
+  width: 100%;
+  padding: 1rem;
+  border-radius: .5rem;
+  background: #BDE1FF; /* Changed background color to a darker shade */
+  color: #000; /* Ensure the text color is white */
+}
+
+.contact__form select{
+  font-weight:350;
+}
+
+
+/*===============MEDIA================*/
+/* Media Queries for Responsive Design */
+
+@media screen and (max-width: 600px) {
+  /* Styles for screens up to 600px */
+  .contact__container {
+    width: 100%;
+    grid-template-columns: 1fr;
+    gap: 3rem;
+    margin-top: 0;
+    padding: 0;
+  }
+
+  .contact__form {
+    margin: 0 1.5rem 3rem 1.5rem;
+  }
+
+  .form__name {
+    flex-direction: column;
+  }
+
+  .form__name input[type="text"] {
+    width: 100%;
+  }
+
+  .aside__image img {
+    display: none;
+    position: absolute;
+    width: 10%; /* Adjust image width to 10% for responsiveness */
+    height: auto; /* Ensure height adjusts proportionally */
+    top: 0; /* Position the image relative to its parent */
+    left: 0; /* Position the image relative to its parent */
+  }
+}
+
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+  /* Styles for screens between 601px and 1024px */
+  nav {
+    padding: 0 5%;
+  }
+
+  .contact {
+    padding-bottom: 0;
+  }
+
+  .contact__container {
+    gap: 1.5rem;
+    margin-top: 3rem;
+    height: auto;
+    padding: 1rem;
+    width: auto;
+  }
+
+  .contact__aside {
+    width: 75%;
+    margin: 1rem;
+    padding: 1.5rem;
+    bottom: 0;
+  }
+
+  .contact .contact__container .contact__aside .contact__details .email{
+    font-size: 10px;
+  }
+
+  .contact__form {
+    align-self: center;
+    width: 75%;
+    margin: 1rem;
+  }
+
+  .aside__image img {
+    display: none;
+    position: absolute;
+    width: 50%; /* Adjust image width to 50% for responsiveness */
+    height: auto; /* Ensure height adjusts proportionally */
+    top: 0; /* Position the image relative to its parent */
+    left: 0; /* Position the image relative to its parent */
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  /* Styles for screens up to 1024px */
+
+  .contact {
+    padding-bottom: 0;
+  }
+
+  .contact__container {
+    gap: 1.5rem;
+    margin: 1rem;
+    height: auto;
+    padding: 1rem;
+    width: auto;
+  }
+
+  .contact__aside {
+    width: 90%;
+    margin: 1rem;
+    padding: 1rem;
+    bottom: 0;
+  }
+
+  .contact .contact__container .contact__aside .contact__details h5 {
+    max-width: none; /* Allow the email to expand */
+    white-space: normal; /* Allow wrapping */
+    word-wrap: normal;
+    overflow: visible; /* Show full text */
+  }
+
+  .contact__form {
+    align-self: center;
+    width: 90%;
+    margin: 1rem;
+  }
+
+  .aside__image img {
+    display: none;
+    position: absolute;
+    width: 50%; /* Adjust image width to 50% for responsiveness */
+    height: auto; /* Ensure height adjusts proportionally */
+    top: 0; /* Position the image relative to its parent */
+    left: 0; /* Position the image relative to its parent */
+  }
+}

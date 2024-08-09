@@ -82,6 +82,25 @@ body article blockquote {
     box-shadow: inset 0 0 80px rgba(0, 0, 0, 0.1);
 }
 
+.bold a{
+    font-weight: bolder;
+}
+
+body .container .header2 .info1 {
+    text-align: center;
+    color: var(--white-color);
+    border-radius: 1rem;
+    padding: 2rem;
+    border: dashed;
+    border-color: var(--accent-color);
+}
+
+body .container .header2 .info1 .title {
+    margin: 0 0 20px;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
 @media screen and (max-width: 768px) {
 
     body .container header{

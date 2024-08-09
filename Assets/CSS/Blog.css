@@ -34,6 +34,8 @@ body .container header .category {
 body .container header .info {
     text-align: center;
     color: var(--white-color);
+    text-shadow: 
+    -1px 1px 0 #000;
 }
 
 body .container header .info .tags i {

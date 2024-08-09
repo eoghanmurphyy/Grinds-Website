@@ -40,6 +40,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 2rem;
 }
 
 .studentreviews a{
@@ -104,6 +105,7 @@
     border-radius: 1rem;
     top: 37%; /* Adjust to control vertical overlap */
     left: 25%; /* Adjust to control horizontal overlap */
+    margin-bottom: 0;
 }
 
 .achievement__icon{
@@ -128,6 +130,10 @@
 }
 
 /* ===================MEET THE TEAM+++++++++++++++++++++++ */
+
+.team h2{
+    margin-top: 3rem;
+}
 
 .team h2 span {
     display: block; /* Change from inline-flex to block */
@@ -212,6 +218,32 @@
 
 .team__member-socials a{
     padding: 1rem;
+}
+
+/* ==== About the Grinds ==== */
+
+.about{
+    display: flex;
+    border-radius: 1rem;
+    background: #4169E1;
+    padding: 2rem;
+    margin: 3rem 10rem 1rem;
+    flex-direction: row;
+}
+
+.about p{
+    color: #FFFFFF;
+    margin: 0 0 1rem 0; /* Add margin between paragraphs */
+    text-align: left; /* Align text to the left */
+    display: block; /* Ensure paragraphs are displayed as block elements */
+    color: var(--white-color);
+}
+
+.about img{
+    margin: 0 2rem .25rem .5rem;
+    width: 425px;
+    height: 300px;
+    border-radius: 1rem;
 }
 
 /*==== MEDIA ====*/

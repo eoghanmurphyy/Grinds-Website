@@ -1,0 +1,143 @@
+h2 span {
+    display: block; /* Change from inline-flex to block */
+    text-align: center;
+    background: #fff;
+    padding: 2.5rem;
+    border-radius: 1rem;
+    margin: 6rem 3rem 1rem 3rem;
+    opacity: 0;
+    transform: translateY(50px); /* Start 50px lower */
+    transition: opacity 0.7s ease-out, transform 0.7s ease-out;
+}
+
+.g span {
+    display: block; /* Change from inline-flex to block */
+    text-align: center;
+    background: #fff;
+    padding: 2.5rem;
+    border-radius: 1rem;
+    margin: 3rem 3rem 1rem 3rem;
+    opacity: 0;
+    transform: translateY(50px); /* Start 50px lower */
+    transition: opacity 0.7s ease-out, transform 0.7s ease-out;
+}
+
+.bold{
+    font-weight: bolder;
+    font-size: large;
+    text-align: center;
+    display: block;
+}
+
+h2 span:hover{
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 0 3rem 3rem rgba(0, 0, 0, 0.5);
+}
+
+.aboutme, .aboutgrinds{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center align the content */
+    margin-top: 3rem;
+}
+
+.aboutme .information{
+    background: #4169E1;
+    padding: 2rem;
+    border: 1px solid transparent;
+    border-radius: 1rem;
+    margin: 5rem 1rem 1rem;
+    max-width: 500px; /* Optional: Set a max-width for both columns */
+    max-height: 350px;
+    opacity: 0;
+    transform: translateY(50px); /* Start 50px lower */
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.aboutme .about{
+    background: #4169E1;
+    padding: 2rem;
+    border: 1px solid transparent;
+    border-radius: 1rem;
+    margin: 1rem;
+    max-width: 400px; /* Optional: Set a max-width for both columns */
+    opacity: 0;
+    transform: translateY(50px); /* Start 50px lower */
+    transition: opacity 0.7s ease-out, transform 0.7s ease-out;
+}
+
+.aboutme .about.visible, .aboutme .information.visible, h2 span.visible, .studentreviews a.visible{
+    opacity: 1;
+    transform: translateY(0); /* Move to the original position */
+}
+
+.aboutme .about img, .aboutgrinds .about img{
+    max-width: 100%;
+    border-radius: 1rem;
+}
+
+p{
+    color: #FFFFFF;
+    margin: 0 0 1rem 0; /* Add margin between paragraphs */
+    text-align: left; /* Align text to the left */
+    display: block; /* Ensure paragraphs are displayed as block elements */
+}
+
+li{
+    color: #FFFFFF;
+    margin: 0 1rem 1rem 0; /* Add margin between paragraphs */
+}
+
+.center{
+    text-align: center;
+    font-weight: bold;
+    font-size: large;
+}
+
+.aboutgrinds .about{
+    background: #4169E1;
+    padding: 2rem;
+    border: 1px solid transparent;
+    border-radius: 1rem;
+    margin: 3rem 1rem;
+    justify-content: space-between;
+    max-width: 500px; /* Optional: Set a max-width for both columns */
+    max-height: 350px;
+    opacity: 0;
+    transform: translateY(50px); /* Start 50px lower */
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.aboutgrinds .information{
+    background: #4169E1;
+    padding: 2rem;
+    border: 1px solid transparent;
+    border-radius: 1rem;
+    margin: 1rem;
+    max-width: 700px; /* Optional: Set a max-width for both columns */
+    opacity: 0;
+    transform: translateY(50px); /* Start 50px lower */
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.aboutgrinds .about.visible, .aboutgrinds .information.visible{
+    opacity: 1;
+    transform: translateY(0); /* Move to the original position */
+}
+
+.studentreviews{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 2rem 4rem 2rem;
+}
+
+.studentreviews a{
+    border-radius: 1rem;
+    margin: 0.5rem;
+    padding: 1rem;
+    background-color: var(--accent-color);
+    opacity: 0;
+    transform: translateY(50px); /* Start 50px lower */
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}

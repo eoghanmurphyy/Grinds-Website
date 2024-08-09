@@ -9,63 +9,47 @@
     />
     <link rel="stylesheet" href="/Assets/CSS/Template.css" />
     <link rel="stylesheet" href="/Assets/CSS/Homepage.css" />
+    <link rel="stylesheet" href="/Assets/CSS/fade.css">
+    <script src="/JavaScript/include.js" defer></script> 
+  <!-- defer ensures the script is executed after the HTML doc is parsed by the web browser -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <!-- Include your custom script -->
+    <script src="/JavaScript/script.js"></script>
     <title>Home | Level Up Institute</title>
   </head>
 
   <body>
-    <nav>
-      <div class="left">
-        <div class="logo">
-          <img src="/Assets/Images/GRINDS SCHOOL LOGO Final (1) crop.png" />
-        </div>
-        <div class="links">
-          <a href="#">Home</a>
-          <a href="/Pages/Contact Us.html">Grinds</a>
-          <a href="/Pages/Courses.html">Courses</a>
-          <a href="/Pages/Blog Pages/Landing Page.html">Blog</a>
-          <a href="#">Youtube</a>
-          <a href="/Pages/About Us.html">About Us</a>
-          <a href="/Pages/Contact Us.html">Contact Us</a>
-        </div>
-      </div>
-
-      <div class="buttons">
-        <a href="/Pages/Contact Us.html"><i class="bx bx-support"></i></a>
-        <a href="#"><i class="bx bx-basket"></i></a>
-        <a href="/Pages/Login Page/login.html"
-          ><i class="bx bxs-user"></i
-        ></a>
-      </div>
-    </nav>
+    <div data-include="/Includes/nav.html"></div>
 
     <header>
-      <div class="container__left">
-        <div class="info">
-          <h1>Learn Easier with Level Up</h1>
-          <p>Success Awaits</p>
+      <div id="animated-background"></div>
+      <div class="header-content">
+        <div class="container__left">
+          <div class="info">
+            <h1>Learn <span id="dynamictext">Maths</span> Easier with Level Up</h1>
+            <script src="/JavaScript/alttext.js"></script>
+            <p>Success Awaits</p>
+          </div>
+          <div class="image">
+            <img src="/Assets/Images/3d-student-graduation-cap-books-stack.png" />
+          </div>
         </div>
-        <div class="image">
-          <img src="/Assets/Images/3d-student-graduation-cap-books-stack.png" />
-        </div>
-      </div>
-      <div class="container__right">
-        <div class="buttons">
-          <button onclick="window.location.href='/Pages/Contact Us.html'">
-            Book a Grind
-          </button>
-          <button
-            class="see-all"
-            onclick="window.location.href='/Pages/Courses.html'"
-          >
-            See Courses
-          </button>
-          <button onclick="window.location.href='/Pages/About Us.html'">
-            Why Pick Us?
-          </button>
-        </div>
-        <div class="search">
-          <input type="text" placeholder="Search what you want..." />
-          <button><i class="bx bx-search"></i></button>
+        <div class="container__right">
+          <div class="buttons">
+            <button onclick="window.location.href='/Pages/congrind.html'">
+              <a href="/Pages/congrind.html">Book a Grind</a>
+            </button>
+            <button class="see-all" onclick="window.location.href='/Pages/Courses.html'">
+              <a href="/Pages/Courses.html">See Courses</a>
+            </button>
+            <button onclick="window.location.href='/Pages/About Us.html'">
+              <a href="/Pages/About Us.html">Why Pick Us?</a>
+            </button>
+          </div>
+          <!-- <div class="search">
+            <input type="text" placeholder="Search what you want..." />
+            <button><i class="bx bx-search"></i></button>
+          </div> -->
         </div>
       </div>
     </header>
@@ -74,7 +58,7 @@
       <h2><span>Meet the Tutors!</span></h2>
       <div class="container_team__container">
         <article class="team__member">
-          <a href="/Pages/Contact Us.html">
+          <a href="/Pages/bookagrind.html">
             <div class="team__member-image">
               <img
                 src="/Assets/Images/Superprof profile pic 2 - Copy.jpg"
@@ -83,21 +67,21 @@
             </div>
             <div class="team__member-info">
               <h4>Eóghan Murphy</h4>
-              <p>Experienced Tutor & Founder</p>
+              <p>Experienced Tutor</p>
             </div>
             <div class="team__member-socials">
               <a href="https://instagram.com" target="_blank"
                 ><i class="bx bxl-instagram"></i
               ></a>
-              <a href="https://twitter.com" target="_blank"
+              <!-- <a href="https://twitter.com" target="_blank"
                 ><i class="bx bxl-twitter"></i
-              ></a>
+              ></a> -->
               <a href="https://linkedin.com" target="_blank"
                 ><i class="bx bxl-linkedin-square"></i
               ></a>
             </div>
             <div class="Booknow">
-              <a href="/Pages/Contact Us.html">Book Now!</a>
+              <a href="/Pages/bookagrind.html">Book Now!</a>
             </div>
           </a>
         </article>
@@ -105,7 +89,7 @@
           <img src="/Assets/Images/Progress.jpg" alt="" />
           <p>Eóghan is a Physics Student and Entrance Scholar at UCD.</p>
           <p>
-            He recieved a H1 in Leaving Cert Maths and has recieved 'A' grades
+            He recieved a H1 in Leaving Cert Maths and has recieved 'A+' grades
             in University Level Maths and Physics Modules.
           </p>
           <p>
@@ -133,7 +117,7 @@
       <div class="comments">
         <div class="right">
           <div class="item">
-            <h5>Alison, Mother of Hannah - JC OL Student</h5>
+            <h5>Alison - Mother of Hannah, JC OL Student</h5>
             <p>
               Eóghan has been so helpful in helping my Hannah to achieve better
               grades in Maths. Hannah has gone from failing maths to getting an
@@ -203,7 +187,7 @@
             </div>
           </div>
           <div class="item">
-            <h5>Luke  - LC HL Student</h5>
+            <h5>Luke - LC HL Student</h5>
             <p>
               Eóghan was a great teacher who helped me greatly in HL maths. In the space of a month I went from badly failing, to a h5 standard. He was very clear when explaining everything and extremely helpful.
             </p>
@@ -220,7 +204,7 @@
       </div>
 
       <div class="separator">
-        <h2>Courses (Coming Soon!)</h2>
+        <h2>Courses (Coming Soon)</h2>
         <a href="/Pages/Courses.html"
           >See all <i class="bx bx-chevron-right"></i
         ></a>
@@ -321,28 +305,27 @@
       <div class="videos">
         <div class="item">
           <div class="top">
-            <iframe
-              src="/Assets/Videos/The Unit Circle.mp4*"
-              frameborder="0"
-              allowfullscreen
-            ></iframe>
-            <h5>LC HL Trigonometry</h5>
+            <video id="scroll-video" autoplay loop muted>
+              <source src="/Assets/Videos/Launching Soon(1).mp4" type="video/mp4">
+              Your browser does not support this type of video tag
+            </video>
           </div>
-          <div class="bottom">
+          <!-- <div class="bottom">
             <h3>Maths and Science Videos <span>Posted Weekly!</span></h3>
-          </div>
+          </div> -->
         </div>
       </div>
+      <script src="/JavaScript/Video.js"></script>
 
       <div class="separator">
-        <h2>Read Our Blog</h2>
+        <h2>Read Our Blog (Coming Soon)</h2>
         <a href="/Pages/Blog Pages/Landing Page.html"
           >See all <i class="bx bx-chevron-right"></i
         ></a>
       </div>
 
       <div class="articles">
-        <div class="item">
+        <!-- <div class="item">
           <div class="top">
             <img src="/Assets/Images/Stressed Student.jpg" />
             <h5>How to Manage Stress of Exams</h5>
@@ -353,8 +336,8 @@
               >Read More <i class="bx bx-chevron-right"></i
             ></a>
           </div>
-        </div>
-        <div class="item">
+        </div> -->
+        <!-- <div class="item">
           <div class="top">
             <img src="/Assets/Images/Time Management New.jpg" />
             <h5>How to Manage time in the run in to Exams</h5>
@@ -366,8 +349,8 @@
               >Read More <i class="bx bx-chevron-right"></i
             ></a>
           </div>
-        </div>
-        <div class="item">
+        </div> -->
+        <!-- <div class="item">
           <div class="top">
             <img src="/Assets/Images/Learning New.jpg" />
             <h5>What Science can we use to Increase our Learning?</h5>
@@ -378,8 +361,8 @@
               >Read More <i class="bx bx-chevron-right"></i
             ></a>
           </div>
-        </div>
-        <div class="item">
+        </div> -->
+        <!-- <div class="item">
           <div class="top">
             <img src="/Assets/Images/Study Tips.jpg" />
             <h5>Studying tips for All Students</h5>
@@ -390,80 +373,11 @@
               >Read More <i class="bx bx-chevron-right"></i
             ></a>
           </div>
-        </div>
+        </div> -->
       </div>
     </div>
 
-    <footer>
-      <div class="columns">
-        <div class="col">
-          <h5>Contact Information</h5>
-          <ul class="contact_details">
-            <li>
-              <i class="bx bxs-phone"></i>
-              <h5>+353 851193536</h5>
-            </li>
-            <li>
-              <i class="bx bx-envelope"></i>
-              <h5 class="email">eoghanmurphhy@gmail.com</h5>
-            </li>
-            <li>
-              <i class="bx bx-map"></i>
-              <h5>Blessington, Wicklow, Ireland</h5>
-            </li>
-          </ul>
-          <a class="contactusfooter" href="/Pages/Contact Us.html">Contact Us</a>
-        </div>
-        <div class="col">
-          <h5>Site Links</h5>
-          <a href="/Pages/index.html">Home</a>
-          <a href="/Pages/About Us.html">About Us</a>
-          <a href="/Pages/Contact Us.html">Grinds</a>
-          <a href="/Pages/Courses.html">Courses</a>
-          <a href="/Pages/Blog Pages/Landing Page.html">Blog</a>
-        </div>
-        <div class="col">
-          <h5>Other Links</h5>
-          <a href="#">FAQS</a>
-          <a href="#">Privacy Policy</a>
-          <a href="#">Terms of Service</a>
-          <a href="#">Cookies</a>
-          <a href="/Pages/Contact Us.html">Support</a>
-          <a href="/Pages/attributions.html">Attributions</a>
-        </div>
-        <div class="col">
-          <h5>Collaboration</h5>
-          <a href="/Pages/workwithus.html">Work With Us</a>
-        </div>
-        <div class="col last">
-          <h5>Sign Up to Our Weekly Newsletter</h5>
-          <p>Hear about our latest Blog and Upcoming Courses/Events!</p>
-          <div class="form2">
-            <form
-          action="https://formspree.io/f/mjvndlpa"
-          method="POST"
-          class="contact__form2">
-          <input
-            type="email"
-            name="Email Address"
-            placeholder="Your Email Address"
-            required
-          />
-          <button type="submit" class="btn btn-primary">Sign Up</button>
-          </div>
-
-          <h5 class="Socialsfooter">Socials</h5>
-          <div class="social-links">
-            <a href="#"><i class="bx bxl-instagram"></i></a>
-            <a href="#"><i class="bx bxl-youtube"></i></a>
-            <a href="#"><i class="bx bxl-linkedin-square"></i></a>
-          </div>
-        </div>
-      </div>
-      <div class="copyright">
-        <img src="/Assets/Images/GRINDS SCHOOL LOGO Final (1) crop.png">
-        <p>Copyright © 2024 Level Up Institute, All Rights Reserved.</p>
-      </div>
-    </footer>
+    <div data-include="/Includes/Footer.html"></div>
   </body>
+  <script src="/JavaScript/fadein.js"></script>
 </html>

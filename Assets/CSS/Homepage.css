@@ -13,15 +13,39 @@
 
 /*-----HEADER-----*/
 header {
+    position: relative; /* Make sure the header is the containing block for absolute positioning */
+    overflow: hidden; /* Hide any overflow to keep the header tidy */
+    padding: 2rem 0 8rem; /* Adjust padding as needed */
+}
+
+/* Animated background styling */
+#animated-background {
+    width: 100%;
+    position: absolute; /* Absolute positioning to overlay the entire header */
+    z-index: 1; /* Place it behind other header content */
+}
+
+/* Header content styling */
+.header-content {
+    position: relative; /* Position relative to ensure it stacks above the animated background */
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     padding: 50px 0;
     text-align: center;
     gap: 10px;
+    /* opacity: 0; */
+    /* transform: translateY(50px); Start 50px lower */
+    /* transition: opacity 0.6s ease-out, transform 0.6s ease-out; */
+}
+
+header .image{
+    z-index: 5;
+}
+/* header {
     /*background-image: radial-gradient(#2d6a4f 0.75px, transparent 0.75px),
     radial-gradient(#2d6a4f 0.75px, #ffffff 0.75px);*/
-}
+/* } */
 
 header .container__left, header .container__right, header .container__left .image {
     width: 50%;
@@ -54,11 +78,14 @@ header .container__right .buttons {
     display: flex;
     gap: 14px;
     margin-top: 10px;
+    z-index: 2;
+    opacity: 0.95;
 }
 
 header .container__right .buttons button {
     border: none;
-    padding: 8px;
+    font-size: 15.84px;
+    padding: 15px;
     width: 120px;
     border-radius: 10px;
     background-color: var(--accent-color);
@@ -107,7 +134,6 @@ header .container__right .search button {
 
 .team h2 span {
     display: block; /* Change from inline-flex to block */
-    margin: 0 auto;
     text-align: center;
     background: #fff;
     padding: 2rem;
@@ -136,7 +162,7 @@ header .container__right .search button {
     display: flex;
     flex-wrap: wrap;
     justify-content: center; /* Center align the content */
-    margin: 1rem 0 5rem 0;
+    margin-top: 3rem;
 }
 
 .container_team__container .team__member,
@@ -374,7 +400,7 @@ header .container__right .search button {
 .content .hear > h5{
     display: inline-block;
     font-weight: 500;
-    background-color: #F2B84B;
+    background-color: #f7be21;
     padding: 10px;
     border-radius: 12px;
     font-size: 18px;
@@ -410,7 +436,7 @@ header .container__right .search button {
 }
 
 .content .separator1 h2 span{
-    background-color: #F2B84B;
+    background-color: #f7be21;
     display: inline-block;
     padding: 10px;
     border-radius: 20px;
@@ -487,6 +513,10 @@ header .container__right .search button {
     box-shadow: 0 3rem 3rem rgba(0, 0, 0, 0.5);
 }
 
+.content .comments .right .item{
+    justify-content: space-around;
+}
+
 /* Styles for the star rating */
 /* This section styles the star rating element within each comment item */
 .content .comments .item .rating {
@@ -505,7 +535,7 @@ header .container__right .search button {
 /* This styles the active state of the star icons (e.g., when a user rates) */
 .content .comments .item .rating .star.active {
     /* Use a different colored star or adjust opacity to indicate selection */
-    filter: brightness(1.5); /* Example: make the star brighter */
+    filter: brightness(1); /* Example: make the star brighter */
 }
 
 
@@ -517,13 +547,6 @@ header .container__right .search button {
     justify-content: space-between; /* Distribute items evenly along the main axis with space between */
     gap: 30px; /* Set the gap between child elements */
     margin: 0 0 100px; /* Set margins (top 0, right 0, bottom 100px, left 0) */
-}
-
-/* This styles the paragraph element directly within the comment section */
-.content .comments > p {
-    width: 65%; /* Set the width of the paragraph */
-    color: #2d6a4f; /* Set the text color */
-    font-size: 20px; /* Set the font size */
 }
 
 /* This section styles the comment items container within the comment section */
@@ -558,9 +581,10 @@ header .container__right .search button {
 
 .content .comments .right .item p{
     width: 100%;
-    color: #2d6a4f;
+    color: #000;
     font-size: 16px;
     margin-top: 10px;
+    font-weight: 375;
 }
 
 
@@ -577,7 +601,7 @@ header .container__right .search button {
     margin: 0 auto; /* Center the video horizontally */
 }
 
-.content .videos .item .top iframe,
+.content .videos .item .top video,
 .content .videos .item .top object,
 .content .videos .item .top embed {
     position: absolute;
@@ -586,6 +610,10 @@ header .container__right .search button {
     width: 100%;
     height: 100%;
     border-radius: 20px; /* Apply the same border radius as the container */
+}
+
+.content .videos .item .top{
+    margin-bottom: 3rem;
 }
 
 .content .videos .item .bottom{
@@ -602,7 +630,6 @@ header .container__right .search button {
     justify-content: space-between;
     margin: 20px;
 }
-
 
 /*-----END OF CONTENT-----*/
 

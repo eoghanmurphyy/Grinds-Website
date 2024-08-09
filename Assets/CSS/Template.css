@@ -168,6 +168,7 @@ footer .columns .col.last p {
     color: var(--white-color);
     background-color: var(--accent-color);
     padding: .5rem;
+    border: transparent;
     border-radius: .5rem;
     cursor: pointer;
     font-size: 14px;
@@ -175,18 +176,20 @@ footer .columns .col.last p {
 
 footer .columns .col.last .social-links {
     display: flex;
+    flex-direction: column;
+    text-align: center;
     gap: 1rem;
+    margin-bottom: 2rem;
 }
 
+
+
 footer .columns .col.last .social-links a{
-    position: relative;
-    top: -2%;
-    left: 3.5%;
     padding: 1rem;
     border: dashed;
     border-radius: 1rem;
     cursor: pointer;
-    text-align: center;
+    margin: 0.25rem;
 }
 
 footer .columns .col.last .social-links i{
@@ -194,9 +197,7 @@ footer .columns .col.last .social-links i{
 }
 
 .Socialsfooter{
-    position: relative;
     margin-top: 2rem;
-    left: 30%;
 }
 
 .contact_details li {
@@ -253,9 +254,6 @@ a:hover {
     .col.last .social-links,
     .col.last .social-links a,
     .contact__form2 {
-        position: initial;
-        top: auto;
-        left: auto;
         text-align: center; /* Center text and inline elements horizontally */
     }
 
@@ -264,15 +262,22 @@ a:hover {
         align-items: center;
     }
 
-    .col.last .social-links{
-        margin-right: 1.35rem;
-    }
-
     .col.last .form2{
         margin-left: 2rem;
         text-align: center;
         align-items: center;
         justify-content: center;
+    }
+
+    footer .columns .col.last .social-links a{
+        display: inline-block;
+    }
+
+    .socialsboxes{
+        display: flex;
+        flex-direction: row;
+        width: 50%;
+        gap: 1rem;
     }
 }
 

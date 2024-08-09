@@ -1,0 +1,12 @@
+/* Visible stuff */
+
+.team, .content .separator, .content .hear, .content .comments, .content .courses, .content .videos, .content .articles{
+    opacity: 0;
+    transform: translateY(50px); /* Start 50px lower */
+    transition: opacity 0.4s ease-out, transform 0.4s ease-out;
+}
+
+.header-content.visible, .team.visible, .content .separator.visible, .content .hear.visible, .content .comments.visible, .content .courses.visible, .content .videos.visible, .content .articles.visible{
+    opacity: 1;
+    transform: translateY(0);
+}
