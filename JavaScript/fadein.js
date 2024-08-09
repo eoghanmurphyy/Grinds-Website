@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const elements = document.querySelectorAll('h2 span, .about, .information, .studentreviews a, .team, .separator, .videos, .articles, .hear, .comments, .courses');
+    const elements = document.querySelectorAll('h2 span, .about, .information, .studentreviews a, .team, .separator, .videos, .articles, .hear, .comments, .courses, .img1, .img2, .items, .about__achievements-right h2, .achievement__card1, .achievement__card2, .achievement__card3');
 
     const isVisible = (elem) => {
         const rect = elem.getBoundingClientRect();

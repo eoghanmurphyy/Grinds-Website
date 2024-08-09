@@ -1,0 +1,96 @@
+:root {
+    --primary-color: #4B53F2; /* Primary color */
+    --secondary-color: #140F8C; /* Secondary color */
+    --background-color: #F2F2F2; /* Background color */
+    --accent-color: #F26B6B; /* Accent color */
+    --light-accent-color: #BBCDF2; /* Light accent color */
+    --dark-accent-color: #0A0773; /* Dark accent color */
+    --white-color: #FFFFFF; /* White color */
+    --link-color: #FFFFFF; /* Link color */
+    --link-hover-color: #3f72af; /* Link hover color */
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 5rem 3rem;
+    gap: 2rem;
+}
+
+img{
+    max-width: 100%;
+}
+
+.img1, .img2{
+    width: 120%;
+    height: 120%;
+    margin-top: 6rem;
+}
+
+.img1{
+    border-radius: 1rem;
+    opacity: 0;
+    transform: translateY(-100px); /* Start 50px lower */
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.img2{
+    opacity: 0;
+    transform: translateY(100px); /* Start 50px lower */
+    transition: opacity 1s ease-out, transform 1s ease-out;
+    background: var(--white-color);
+    border-radius: 1rem;
+}
+
+.items{
+    gap: 1.2rem;
+    background: #4169E1;
+    padding: 2rem;
+    border-radius: 1rem;
+    opacity: 0;
+    /* transform: translateY(50px); Start 50px lower */
+    transition: opacity 2s ease-out, transform 2s ease-out;
+}
+
+.items h1{
+    text-align: center;
+    color: var(--white-color);
+    margin-bottom: 2rem;
+    font-weight: bolder;
+}
+
+.items p{
+    color: var(--white-color);
+    margin-bottom: 1rem;
+}
+
+.items a{
+    text-align: center;
+}
+
+.studentreviews{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2rem;
+}
+
+.studentreviews a{
+    border-radius: 1rem;
+    margin: 0.5rem;
+    padding: 1rem;
+    background-color: var(--accent-color);
+}
+
+.team{
+    margin-bottom: 5rem;
+    opacity: 0;
+    transform: translateY(50px); /* Start 50px lower */
+    transition: opacity 0.4s ease-out, transform 0.4s ease-out;
+}
+
+.team.visible, .items.visible, .img1.visible, .img2.visible{
+    opacity: 1;
+    transform: translateY(0);
+}

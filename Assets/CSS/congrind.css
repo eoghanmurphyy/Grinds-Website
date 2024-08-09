@@ -57,8 +57,8 @@ button:hover{
   padding: 1rem;
   border-radius: 1rem;
   position: relative;
-  bottom: 5.5rem;
-  height: 40rem;
+  bottom: 7.5rem;
+  height: 45rem;
 }
 
 .aside__image .bagimage{
@@ -85,7 +85,6 @@ button:hover{
 }
 
 .contact__aside p {
-  font-size: large;
   margin-bottom: 1rem;
   text-align: center;
 }
@@ -101,7 +100,7 @@ button:hover{
 .contact__details li {
   display: flex;
   flex-direction: row;
-  gap: 1rem;
+  gap: 0.5rem;
   align-items: center;
   margin-bottom: 1rem;
 }

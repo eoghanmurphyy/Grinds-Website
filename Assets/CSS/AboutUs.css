@@ -10,6 +10,53 @@
     --link-hover-color: #3f72af; /* Link hover color */
 }
 
+.about__achievements-right h2{
+    display: block; /* Change from inline-flex to block */
+    text-align: center;
+    background: #fff;
+    padding: 2rem;
+    border-radius: 1rem;
+    margin: 6rem 3rem 6rem;
+    opacity: 0;
+    transform: translateY(50px); /* Start 50px lower */
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.about__achievements-right h2.visible{
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.about__achievements-right h2:hover{
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 0 3rem 3rem rgba(0, 0, 0, 0.5);
+}
+
+.achievement__card1{
+    opacity: 0;
+    transform: translateY(50px); /* Start 50px lower */
+    transition: opacity 3s ease-out, transform 3s ease-out;
+}
+
+.achievement__card2{
+    margin-top: 12.5rem;
+    opacity: 0;
+    transform: translateY(50px); /* Start 50px lower */
+    transition: opacity 3s ease-out, transform 3s ease-out;
+}
+
+.achievement__card3{
+    margin-top: 25rem;
+    opacity: 0;
+    transform: translateY(50px); /* Start 50px lower */
+    transition: opacity 3s ease-out, transform 3s ease-out;
+}
+
+.achievement__card1.visible, .achievement__card2.visible, .achievement__card3.visible{
+    opacity: 1;
+    transform: translateY(0);
+}
+
 .about__achievement{
     margin-top: 1rem;
 }
@@ -17,17 +64,6 @@
 .about__achievement .about__achievements-right h1,
 .about__achievement .about__achievements-right p{
     color: #fff;
-}
-
-/* .about__achievement .about__achievements-right .achievements__cards .achievement__card h3{
-    color: #fff;
-} */
-
-.container_about__achievements_container{
-    display: grid;
-    grid-template-columns: 50% 50%;
-    gap: 3rem;
-    margin: 4rem 14rem 2rem 0;
 }
 
 .about__achievement .container_about__achievements_container .about__achievements-right h1,
@@ -43,69 +79,54 @@
     margin: 2rem;
 }
 
+.studentreviews a.visible{
+    opacity: 1;
+    transform: translateY(0);
+}
+
 .studentreviews a{
     border-radius: 1rem;
     margin: 0.5rem;
     padding: 1rem;
     background-color: var(--accent-color);
+    opacity: 0;
+    transform: translateY(50px); /* Start 50px lower */
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
 }
 
 .about__achievements-right > p{
     margin: 1.6rem 0 2rem;
 }
 
-.h1two{
-    margin-top: 6rem;
-}
-
 .achievements__cards{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1.5rem;
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+    margin: 0 8rem;
+    text-align: center;
+    justify-content: space-evenly;
 }
 
-.achievement__card{
+.achievement__card1, .achievement__card2, .achievement__card3{
     background: #4B53F2;
-    padding: 1.6rem;
+    padding: 1.5rem;
+    width: 20%;
+    height: 17.5rem;
     border-radius: 1rem;
+    gap: 2rem;
     text-align: center;
     transition: all 0.3s ease-in-out;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.achievement__card p{
+.achievement__card1 p, .achievement__card2 p, .achievement__card3 p{
     font-size: 15px;
-
 }
 
-.achievement__card:hover{
+.achievement__card1:hover, .achievement__card2:hover, .achievement__card3:hover{
     background: #4B53F2;
     box-shadow: 0 3rem 3rem rgba(0, 0, 0, 0.3);
-}
-
-.about__achievements-left {
-    position: relative; /* Allows absolute positioning of children */
-    width: 100%; /* Adjust as needed */
-    height: auto; /* Adjust as needed */
-}
-
-.img1{
-    position: absolute; /* Allows overlapping positioning */
-    max-width: 60%; /* Adjust to control size */
-    border-radius: 1rem;
-}
-
-.img1 {
-    top: 5%;
-    left: 32.5%;
-}
-
-.img2 {
-    position: absolute; /* Allows overlapping positioning */
-    max-width: 75%; /* Adjust to control size */
-    border-radius: 1rem;
-    top: 37%; /* Adjust to control vertical overlap */
-    left: 25%; /* Adjust to control horizontal overlap */
-    margin-bottom: 0;
 }
 
 .achievement__icon{
@@ -117,19 +138,30 @@
     font-size: 2rem;
 }
 
-.achievement__card:nth-child(2) .achievement__icon{
+.achievement__card2 .achievement__icon{
     background-color: #7B68EE;
 }
 
-.achievement__card:nth-child(3) .achievement__icon{
+.achievement__card3 .achievement__icon{
     background-color: #8A2BE2;
 }
 
-.achievement__card p{
-    margin-top: 1rem;
+.achievement__card1 p, .achievement__card2 p, .achievement__card3 p{
+    margin-top: 2rem;
 }
 
 /* ===================MEET THE TEAM+++++++++++++++++++++++ */
+
+.team{
+    opacity: 0;
+    transform: translateY(50px); /* Start 50px lower */
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.team.visible{
+    opacity: 1;
+    transform: translateY(0);
+}
 
 .team h2{
     margin-top: 3rem;
@@ -267,7 +299,7 @@
         margin: 1rem;
     }
 
-    .achievement__card{
+    .achievement__card1, .achievement__card2, .achievement__card3{
         width: 90%;
     }
 
