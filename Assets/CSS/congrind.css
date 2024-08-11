@@ -63,12 +63,11 @@ button:hover{
 
 .aside__image .bagimage{
   margin: 0 auto 2rem auto; /* Center the image horizontally and add bottom margin */
-  width: 100rem;
 }
 
 .aside__image {
   margin: 0 auto 2rem auto; /* Center the image horizontally and add bottom margin */
-  max-width: 50rem; /* Set maximum width for the image */
+  max-width: 30rem; /* Set maximum width for the image */
   display: block;
 }
 

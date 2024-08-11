@@ -13,9 +13,8 @@
 .container{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
     margin: 5rem 3rem;
-    gap: 2rem;
+    gap: 8rem;
 }
 
 img{
@@ -23,9 +22,8 @@ img{
 }
 
 .img1, .img2{
-    width: 120%;
-    height: 120%;
-    margin-top: 6rem;
+    max-width: 25%;
+    margin: 8rem 0 8rem;
 }
 
 .img1{
@@ -51,6 +49,7 @@ img{
     opacity: 0;
     /* transform: translateY(50px); Start 50px lower */
     transition: opacity 2s ease-out, transform 2s ease-out;
+    margin-bottom: 10rem;
 }
 
 .items h1{

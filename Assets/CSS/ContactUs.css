@@ -60,7 +60,7 @@
 
 .contact__aside p {
   font-size: large;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
   text-align: center;
 }
 
@@ -69,7 +69,11 @@
   flex-direction: row;
   gap: 1rem;
   align-items: center;
-  margin-bottom: 1rem;
+  margin: 1rem 0;
+  font-size: larger;
+}
+
+.contact__details h5{
   font-size: large;
 }
 
