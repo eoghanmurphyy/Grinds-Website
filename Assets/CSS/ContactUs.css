@@ -64,12 +64,16 @@
   text-align: center;
 }
 
+.contact__details {
+  margin-top: 4rem;
+}
+
 .contact__details li {
   display: flex;
   flex-direction: row;
   gap: 1rem;
   align-items: center;
-  margin: 1rem 0;
+  margin: 1rem 0rem;
   font-size: larger;
 }
 
@@ -194,8 +198,8 @@
     bottom: 0;
   }
 
-  .contact .contact__container .contact__aside .contact__details .email{
-    font-size: 10px;
+  .contact .contact__container .contact__aside .contact__details h5{
+    font-size: small;
   }
 
   .contact__form {
@@ -236,11 +240,12 @@
     bottom: 0;
   }
 
-  .contact .contact__container .contact__aside .contact__details h5 {
-    max-width: none; /* Allow the email to expand */
-    white-space: normal; /* Allow wrapping */
-    word-wrap: normal;
-    overflow: visible; /* Show full text */
+  .contact .contact__container .contact__aside .contact__details h5{
+    max-width: 100%; /* Limit the width to the container */
+    width: 100%; /* Ensure it takes full available width */
+    white-space: normal; /* Allow text to wrap normally */
+    word-wrap: break-word; /* Break long words if necessary */
+    overflow: hidden; /* Hide any overflowing content */
   }
 
   .contact__form {

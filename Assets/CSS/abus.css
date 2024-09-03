@@ -93,3 +93,63 @@ img{
     opacity: 1;
     transform: translateY(0);
 }
+
+@media screen and (max-width: 1024px){
+    .img1, .img2{
+        display: none;
+    }
+
+    .about__achievement{
+        margin-top: 2rem;
+    }
+
+    .container_about__achievements_container{
+        grid-template-columns: 1fr;
+        margin: 1rem;
+        gap: 0;
+    }
+
+    .about__achievements-left{
+        margin: 1rem;
+    }
+
+    .container_team__container{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+
+    .container_team__container .team__member{
+        padding: 1rem;
+        margin: 0.25rem;
+    }
+
+    .container_team__container .team__member img{
+        max-width: 100%;
+    } 
+}
+
+@media screen and (max-width: 1500px){
+    .container{
+        gap: 0rem;
+        margin-bottom: 0rem;
+    }
+
+    .items{
+        max-width: 100%;
+    }
+
+    .img2{
+        margin: 6rem 0rem 14rem 3rem;
+        max-width: 40%;
+    }
+
+    .img1{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .container{
+        margin-bottom: 0rem;
+    }
+}

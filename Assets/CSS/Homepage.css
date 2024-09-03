@@ -748,6 +748,7 @@ header .container__right .search button {
 
     .container_team__container .team__member img{
         max-width: 100%;
+        margin: 2.5rem 2.5rem 0rem 2.5rem;
     }
 }
 

@@ -181,12 +181,8 @@ button:hover{
   }
 
   .aside__image img {
-    display: none;
-    position: absolute;
     width: 10%; /* Adjust image width to 10% for responsiveness */
-    height: auto; /* Ensure height adjusts proportionally */
-    top: 0; /* Position the image relative to its parent */
-    left: 0; /* Position the image relative to its parent */
+    position: relative;
   }
 }
 
@@ -226,12 +222,8 @@ button:hover{
   }
 
   .aside__image img {
-    display: none;
-    position: absolute;
+    position: relative;
     width: 50%; /* Adjust image width to 50% for responsiveness */
-    height: auto; /* Ensure height adjusts proportionally */
-    top: 0; /* Position the image relative to its parent */
-    left: 0; /* Position the image relative to its parent */
   }
 }
 
@@ -257,25 +249,10 @@ button:hover{
     bottom: 0;
   }
 
-  .contact .contact__container .contact__aside .contact__details h5 {
-    max-width: none; /* Allow the email to expand */
-    white-space: normal; /* Allow wrapping */
-    word-wrap: normal;
-    overflow: visible; /* Show full text */
-  }
-
   .contact__form {
     align-self: center;
     width: 90%;
     margin: 1rem;
   }
 
-  .aside__image img {
-    display: none;
-    position: absolute;
-    width: 50%; /* Adjust image width to 50% for responsiveness */
-    height: auto; /* Ensure height adjusts proportionally */
-    top: 0; /* Position the image relative to its parent */
-    left: 0; /* Position the image relative to its parent */
-  }
 }
