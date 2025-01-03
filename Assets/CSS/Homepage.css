@@ -701,10 +701,6 @@ header .container__right .search button {
     .container_team__container .info{
         width: 70%;
     }
-
-    .team .container_team__container .team__member{
-        margin: 2rem;
-    }
 }
 
 @media screen and (max-width: 940px) {
@@ -835,6 +831,10 @@ header .container__right .search button {
         width: 25px;
         height: 25px;
     }
+
+    .content h2 span, .content h2{
+        font-size: 1.5rem;
+    }
 }
 
 @media screen and (max-width:576px) {
@@ -855,5 +855,17 @@ header .container__right .search button {
 
     .content .comments .right .item p{
         font-size: 13px;
+    }
+
+    .header-content .container__left .info h1{
+        font-size: 1.5rem;
+    }
+
+    .content h2{
+        font-size: 1.25rem;
+    }
+
+    .content h2 span, .team h2 span{
+        font-size: 1.25rem;
     }
 }
