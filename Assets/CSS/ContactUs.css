@@ -77,6 +77,11 @@
   font-size: larger;
 }
 
+.contact__details .email a{
+  color: #000;
+  font-weight: bold;
+}
+
 .contact__details h5{
   font-size: large;
 }
@@ -88,7 +93,7 @@
   margin-top: 3rem;
 }
 
-.contact__socials a {
+/* .contact__socials a {
   background: var(--dark-accent-color);
   padding: 1rem;
   border-radius: 1rem;
@@ -98,7 +103,7 @@
 
 .contact__socials a:hover {
   background: transparent;
-}
+} */
 
 /* FORM */
 
