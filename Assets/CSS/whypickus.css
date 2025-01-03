@@ -101,7 +101,7 @@
 .studentreviews a{
     border-radius: 1rem;
     margin: 0.5rem;
-    padding: 1rem;
+    padding: 15px;
     background-color: var(--accent-color);
     opacity: 0;
     transform: translateY(50px); /* Start 50px lower */
@@ -355,7 +355,7 @@
         margin-bottom: 6rem;
     }
     .about__achievements-right .achievements__cards{
-        margin: 12rem 0;
+        margin: 15rem 0;
         justify-content: center;
     }
 
@@ -398,6 +398,14 @@
 
     .about__achievement .about__achievements-right h2, .team h2{
         font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .studentreviews a{
+        padding: 0.75rem;
+        font-size: 14px;
+        border-radius: 10px;
     }
 }
 
