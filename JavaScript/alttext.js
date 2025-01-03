@@ -1,4 +1,4 @@
-const words = ["Maths", "Science"];
+const words = ["Maths", "Science", "Physics"];
 
 let i = 0;
 let j = 0;

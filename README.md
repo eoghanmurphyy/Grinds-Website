@@ -1,1 +1,1 @@
-This is my first proper website I will be building myself.
+This is my Tutoring Website, my first ever website coded from scratch using online tutorials and AI to explain and help me code.
