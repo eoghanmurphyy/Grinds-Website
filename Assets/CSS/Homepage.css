@@ -897,4 +897,9 @@ header .container__right .search button {
     .content h2 span, .team h2 span{
         font-size: 1.25rem;
     }
+
+    .content .comments .item .rating .star {
+        width: 22.5px;
+        height: 22.5px;
+    }
 }

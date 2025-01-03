@@ -48,7 +48,7 @@ h2 span:hover{
     border-radius: 1rem;
     margin: 5rem 1rem 1rem;
     max-width: 500px; /* Optional: Set a max-width for both columns */
-    max-height: 350px;
+    max-height: 400px;
     opacity: 0;
     transform: translateY(50px); /* Start 50px lower */
     transition: opacity 0.6s ease-out, transform 0.6s ease-out;
@@ -140,4 +140,37 @@ li{
     opacity: 0;
     transform: translateY(50px); /* Start 50px lower */
     transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.aboutme .information a{
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+}
+
+@media screen and (max-width: 1268px) {
+    .aboutgrinds .about{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    body h2 span{
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 568px) {
+    body h2 span{
+        font-size: 1.25rem;
+    }
+
+    .aboutme .information{
+        margin: 0 1rem 2rem;
+        max-height: 100%;
+    }
+
+    .about{
+        width: 75%;
+    }
 }

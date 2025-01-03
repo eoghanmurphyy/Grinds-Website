@@ -65,7 +65,7 @@
 }
 
 .contact__details {
-  margin-top: 4rem;
+  margin-top: 4.5rem;
 }
 
 .contact__details li {
@@ -175,9 +175,6 @@
 
 @media screen and (min-width: 601px) and (max-width: 1024px) {
   /* Styles for screens between 601px and 1024px */
-  nav {
-    padding: 0 5%;
-  }
 
   .contact {
     padding-bottom: 0;
@@ -261,5 +258,11 @@
     height: auto; /* Ensure height adjusts proportionally */
     top: 0; /* Position the image relative to its parent */
     left: 0; /* Position the image relative to its parent */
+  }
+}
+
+@media screen and (max-width: 568px) {
+  .contact__aside .contact__details h5{
+    font-size: 1rem;
   }
 }
