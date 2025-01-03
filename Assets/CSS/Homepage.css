@@ -701,6 +701,15 @@ header .container__right .search button {
     .container_team__container .info{
         width: 70%;
     }
+
+    header .header-content{
+        max-width: 65%;
+        margin: 0 auto;
+    }
+
+    .header-content h1{
+        font-size: 2rem;
+    }
 }
 
 @media screen and (max-width: 940px) {
@@ -716,6 +725,10 @@ header .container__right .search button {
 
     .content .courses .item .bottom .discount > h5{
         width: 80%;
+    }
+
+    .header-content h1{
+        font-size: 1.75rem;
     }
 
     .content .comments .right .item{
@@ -759,6 +772,15 @@ header .container__right .search button {
     .container_team__container .info img{
         margin: 0 0 3rem 0;
     }
+
+    .header-content{
+        margin: 0;
+    }
+
+    #animated-background{
+        height: 90%;
+    }
+
 }
 
 @media screen and (max-width: 768px){
@@ -767,6 +789,10 @@ header .container__right .search button {
         align-items: center;
         gap: 10px;
         margin-top: 15px; /* Increased margin top for better spacing */
+    }
+
+    header .container__right .buttons button{
+        padding: 0.5rem;
     }
 
     header .container__right .search input {
@@ -857,8 +883,12 @@ header .container__right .search button {
         font-size: 13px;
     }
 
-    .header-content .container__left .info h1{
+    .header-content h1{
         font-size: 1.5rem;
+    }
+
+    .header-content .container__left .info p{
+        font-size: 1rem;
     }
 
     .content h2{
