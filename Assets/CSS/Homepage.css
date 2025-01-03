@@ -69,7 +69,7 @@ header .container__left .info h1 {
 
 header .container__left .info p {
     color: #ccc;
-    font-size: 18px;
+    font-size: 22px;
     margin-top: 14px;
     font-weight: bold;
 }
@@ -208,10 +208,8 @@ header .container__right .search button {
 }
 
 .container_team__container .info img{
-    margin-left: .25rem;
-    margin-bottom: .5rem;
-    width: 425px;
-    height: 300px;
+    margin-bottom: 1rem;
+    max-width: 100%;
     border-radius: 1rem;
 }
 
@@ -521,6 +519,9 @@ header .container__right .search button {
 /* This section styles the star rating element within each comment item */
 .content .comments .item .rating {
     font-size: 0; /* Setting font-size to 0 removes any potential white space between inline-block elements */
+    display: flex; /* allows stars to be mani;ulated in their positions */
+    justify-content: center;
+    gap: 5px;
 }
 
 /* This styles the individual star icons within the star rating */
@@ -546,7 +547,7 @@ header .container__right .search button {
     align-items: center; /* Align items vertically in the center */
     justify-content: space-between; /* Distribute items evenly along the main axis with space between */
     gap: 30px; /* Set the gap between child elements */
-    margin: 0 0 100px; /* Set margins (top 0, right 0, bottom 100px, left 0) */
+    margin: 0 0 1rem; /* Set margins (top 0, right 0, bottom 100px, left 0) */
 }
 
 /* This section styles the comment items container within the comment section */
@@ -561,7 +562,7 @@ header .container__right .search button {
 .content .comments .right .item {
     display: flex;
     flex-direction: column; /* Use flexbox layout */
-    align-items: flex-start; /* Align items vertically in the center */
+    justify-content: space-between;
     background-color: #fff; /* Set the background color */
     padding: 20px; /* Set padding */
     width: calc(32% - 40px); /* Set the width of each item */
@@ -582,8 +583,8 @@ header .container__right .search button {
 .content .comments .right .item p{
     width: 100%;
     color: #000;
+    margin: 1rem 0;
     font-size: 16px;
-    margin-top: 10px;
     font-weight: 375;
 }
 
@@ -696,11 +697,19 @@ header .container__right .search button {
         width: 70%; /* Adjust the width as needed */
         padding-bottom: 40%; /* Adjust the aspect ratio accordingly */
     }
+
+    .container_team__container .info{
+        width: 70%;
+    }
+
+    .team .container_team__container .team__member{
+        margin: 2rem;
+    }
 }
 
 @media screen and (max-width: 940px) {
     header .container__left .info p {
-        font-size: 14px; /* Adjusted font size for smaller screens */
+        font-size: 18px; /* Adjusted font size for smaller screens */
         margin-top: 8px; /* Reduced margin top */
     }
 
@@ -714,7 +723,7 @@ header .container__right .search button {
     }
 
     .content .comments .right .item{
-        width: 48%;
+        width: 47.5%;
     }
 
     .content .videos .item .top,
@@ -748,7 +757,11 @@ header .container__right .search button {
 
     .container_team__container .team__member img{
         max-width: 100%;
-        margin: 2.5rem 2.5rem 0rem 2.5rem;
+        margin: 1.5rem 2rem 0rem;
+    }
+
+    .container_team__container .info img{
+        margin: 0 0 3rem 0;
     }
 }
 
@@ -766,9 +779,12 @@ header .container__right .search button {
         box-shadow: 0px 4px 20px -8px rgba(0, 0, 0, 0.6); /* Reduced box-shadow for a lighter effect */
     }
 
-    header .container__right .search button {
-        padding: 8px; /* Adjusted padding for better button appearance */
-        font-size: 18px; /* Adjusted font size for smaller screens */
+    header .container__left .info p{
+        font-size: 18px;
+    }
+
+    header .container__right .buttons a{
+        font-size: 14px; /* Adjusted font size for smaller screens */
     }
 
     .content{
@@ -811,12 +827,13 @@ header .container__right .search button {
         max-height: 60%;
     }
 
-    .container_team__container .team__member{
-        padding: 0;
-    }
-
     .container_team__container .team__member p{
         margin-bottom: 1.5rem;
+    }
+
+    .content .comments .item .rating .star {
+        width: 25px;
+        height: 25px;
     }
 }
 
