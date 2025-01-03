@@ -765,8 +765,7 @@ header .container__right .search button {
     }
 
     .container_team__container .team__member img{
-        max-width: 100%;
-        margin: 1.5rem 2rem 0rem;
+        margin: 0.5rem ;
     }
 
     .container_team__container .info img{
@@ -846,7 +845,7 @@ header .container__right .search button {
     .container_team__container .team__member img,
     .container_team__container .info img{
         max-width: 100%;
-        max-height: 60%;
+        max-height: 100%;
     }
 
     .container_team__container .team__member p{
