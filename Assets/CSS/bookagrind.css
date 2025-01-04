@@ -142,10 +142,11 @@ li{
     transition: opacity 0.6s ease-out, transform 0.6s ease-out;
 }
 
-.aboutme .information a{
+.aboutme .information .linkedin a{
     display: flex;
     justify-content: center;
     font-size: 2rem;
+    margin: 0 auto;
 }
 
 @media screen and (max-width: 1268px) {
