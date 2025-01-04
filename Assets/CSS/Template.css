@@ -182,8 +182,6 @@ footer .columns .col.last .social-links {
     margin-bottom: 2rem;
 }
 
-
-
 footer .columns .col.last .social-links a{
     padding: 1rem;
     border: dashed;
@@ -255,19 +253,12 @@ a:hover {
     .col.last .social-links,
     .col.last .social-links a,
     .contact__form2 {
-        text-align: center; /* Center text and inline elements horizontally */
+        text-align: center;
     }
 
     .col.last{
         text-align: center;
         align-items: center;
-    }
-
-    .col.last .form2{
-        margin-left: 2rem;
-        text-align: center;
-        align-items: center;
-        justify-content: center;
     }
 
     footer .columns .col.last .social-links a{
@@ -280,8 +271,30 @@ a:hover {
         width: 50%;
         gap: 1rem;
     }
-}
 
+    footer .columns{
+        flex-wrap: wrap;
+        row-gap: 20px;
+    }
+
+    footer .columns .col,
+    footer .columns .col.last{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+        flex: none;
+        margin: 0.75rem 0;
+    }
+
+    .contactusfooter{
+        margin: 0 auto;
+    }
+
+    .contact_details li{
+        justify-content: center;
+    }
+}
 @media screen and (max-width: 940px) {
 
     nav .left .logo{
@@ -295,15 +308,6 @@ a:hover {
     footer .columns{
         flex-wrap: wrap;
         row-gap: 20px;
-    }
-
-    footer .columns .col,
-    footer .columns .col.last{
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        width: 45%;
-        flex: none;
     }
 }
 
@@ -339,5 +343,4 @@ a:hover {
     footer{
         padding: 60px 30px 30px;
     }
-
 }
