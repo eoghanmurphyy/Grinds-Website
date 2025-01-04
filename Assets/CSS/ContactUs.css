@@ -143,102 +143,36 @@
   margin-top: 1rem;
 }
 
+.contact__details{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 /*===============MEDIA================*/
 /* Media Queries for Responsive Design */
 
-@media screen and (max-width: 600px) {
-  /* Styles for screens up to 600px */
-  .contact__container {
-    width: 100%;
-    grid-template-columns: 1fr;
-    gap: 3rem;
-    margin-top: 0;
-    padding: 0;
-  }
 
-  .contact__form {
-    margin: 0 1.5rem 3rem 1.5rem;
-  }
 
-  .form__name {
-    flex-direction: column;
-  }
-
-  .form__name input[type="text"] {
-    width: 100%;
-  }
-
-  .aside__image img {
-    display: none;
-    position: absolute;
-    width: 10%; /* Adjust image width to 10% for responsiveness */
-    height: auto; /* Ensure height adjusts proportionally */
-    top: 0; /* Position the image relative to its parent */
-    left: 0; /* Position the image relative to its parent */
-  }
-}
-
-@media screen and (min-width: 601px) and (max-width: 1024px) {
-  /* Styles for screens between 601px and 1024px */
-
-  .contact {
-    padding-bottom: 0;
-  }
-
-  .contact__container {
-    gap: 1.5rem;
-    margin-top: 3rem;
-    height: auto;
-    padding: 1rem;
-    width: auto;
-  }
-
-  .contact__aside {
-    width: 75%;
-    margin: 1rem;
-    padding: 1.5rem;
-    bottom: 0;
-  }
-
-  .contact .contact__container .contact__aside .contact__details h5{
-    font-size: small;
-  }
-
-  .contact__form {
-    align-self: center;
-    width: 75%;
-    margin: 1rem;
-  }
-
-  .aside__image img {
-    display: none;
-    position: absolute;
-    width: 50%; /* Adjust image width to 50% for responsiveness */
-    height: auto; /* Ensure height adjusts proportionally */
-    top: 0; /* Position the image relative to its parent */
-    left: 0; /* Position the image relative to its parent */
-  }
-}
-
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1200px) {
   /* Styles for screens up to 1024px */
 
   .contact {
     padding-bottom: 0;
   }
+  .contact__details li, .contact__details h5{
+    font-size: 1rem;
+  }
 
   .contact__container {
-    gap: 1.5rem;
-    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 10rem;
     height: auto;
-    padding: 1rem;
     width: auto;
   }
 
   .contact__aside {
-    width: 90%;
-    margin: 1rem;
-    padding: 1rem;
     bottom: 0;
   }
 
@@ -255,19 +189,11 @@
     width: 90%;
     margin: 1rem;
   }
-
-  .aside__image img {
-    display: none;
-    position: absolute;
-    width: 50%; /* Adjust image width to 50% for responsiveness */
-    height: auto; /* Ensure height adjusts proportionally */
-    top: 0; /* Position the image relative to its parent */
-    left: 0; /* Position the image relative to its parent */
-  }
 }
 
-@media screen and (max-width: 568px) {
-  .contact__aside .contact__details h5{
-    font-size: 1rem;
+@media screen and (max-width: 768px) {
+  .contact__container{
+    margin: 1rem auto;
+    min-width: 400px;
   }
 }
